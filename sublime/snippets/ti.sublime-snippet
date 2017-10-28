@@ -1,0 +1,17 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+import tensorflow as tf
+sess = tf.InteractiveSession()
+
+${1}
+
+print(sess.run(${2}))
+sess.close()
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ti</tabTrigger>
+  <description>tf.InteractiveSession()</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.python</scope>
+</snippet>

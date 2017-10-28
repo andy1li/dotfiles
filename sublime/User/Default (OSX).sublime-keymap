@@ -1,0 +1,26 @@
+[
+    { "keys": ["super+t"], "command": "new_file" },
+    { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    { "keys": ["shift+super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    { "keys": ["ctrl+super+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["shift+super+g"], "command": "find_all_under" },
+    { "keys": ["ctrl+super+g"], "command": "find_prev" },
+    { "keys": ["super+r"], "command": "goto_definition" },
+    {"keys": ["shift+super+r"], "command": "reindent", "args": {"single_line": false}},
+    { "keys": ["j", "k"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    { "keys": ["k", "j"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    },
+    {"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 12.0}, "context": [{"key": "setting.command_mode"}]},
+    {"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -12.0}, "context": [{"key": "setting.command_mode"}]},
+]
