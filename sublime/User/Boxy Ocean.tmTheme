@@ -16,7 +16,7 @@
             <key>settings</key>
             <dict>
                 <key>activeGuide</key>
-                <string>#ffffff40</string>
+                <string>#ffffff25</string>
                 <key>background</key>
                 <string>#202124</string>
                 <key>caret</key>
@@ -24,7 +24,7 @@
                 <key>foreground</key>
                 <string>#cdd3de</string>
                 <key>guide</key>
-                <string>#23272b</string>
+                <string>#202124</string>
                 <key>invisibles</key>
                 <string>#65737e</string>
                 <key>lineHighlight</key>
@@ -72,9 +72,9 @@ a {
                 <key>selection</key>
                 <string>#ffffff30</string>
                 <key>selectionBorder</key>
-                <string>#ffffff30</string>
+                <string>#ffffff25</string>
                 <key>stackGuide</key>
-                <string>#ffffff30</string>
+                <string>#ffffff25</string>
             </dict>
         </dict>
         <dict>
