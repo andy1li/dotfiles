@@ -14,6 +14,8 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>AutoCommandHistory</key>
+	<false/>
 	<key>Custom Color Presets</key>
 	<dict>
 		<key>Cobalt2</key>
@@ -1253,8 +1255,18 @@
 	<key>Default Bookmark Guid</key>
 	<string>60B3FC34-4C94-41E6-857A-15E5EC722A67</string>
 	<key>DimBackgroundWindows</key>
+	<true/>
+	<key>DimInactiveSplitPanes</key>
 	<false/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>DisableFullscreenTransparency</key>
+	<false/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
+	<key>EnableProxyIcon</key>
+	<false/>
+	<key>FocusFollowsMouse</key>
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
@@ -1458,13 +1470,13 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>569 203 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>147 234 796 473 0 0 1280 778 </string>
+	<string>261 259 796 473 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>128 49 890 677 0 0 1280 778 </string>
+	<string>72 141 1000 622 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>197 54 890 677 0 0 1280 778 </string>
+	<string>203 134 890 625 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>281 -343 1011 677 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -2175,7 +2187,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.088226421939296543</real>
+			<real>0.060958020924068108</real>
 			<key>Unicode Normalization</key>
 			<integer>3</integer>
 			<key>Unlimited Scrollback</key>
@@ -2262,32 +2274,7 @@
 		<key>Button,1,1,,</key>
 		<dict>
 			<key>Action</key>
-			<string>kContextMenuPointerAction</string>
-		</dict>
-		<key>Button,2,1,,</key>
-		<dict>
-			<key>Action</key>
 			<string>kPasteFromSelectionPointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeDown,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kPrevWindowPointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeLeft,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kPrevTabPointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeRight,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kNextTabPointerAction</string>
-		</dict>
-		<key>Gesture,ThreeFingerSwipeUp,,</key>
-		<dict>
-			<key>Action</key>
-			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
@@ -2315,10 +2302,16 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
+	<key>SmartPlacement</key>
+	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.43551181891025637</real>
 	<key>StretchTabsToFillBar</key>
+	<true/>
+	<key>SuppressRestartAnnouncement</key>
 	<true/>
 	<key>TabStyle</key>
 	<integer>1</integer>

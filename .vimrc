@@ -7,7 +7,7 @@ nnoremap L  gt
 nnoremap oo o<Esc>k
 nnoremap OO O<Esc>j
 
-set whichwrap+=h,l
+set whichwrap+=h,l,<,>,[,]
 set backspace=2
 
 set tabstop=4
@@ -17,6 +17,7 @@ set expandtab
 set ignorecase
 set smartcase
 
+set nrformats=
 
 "Plugins"
 call plug#begin()

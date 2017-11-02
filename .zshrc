@@ -8,6 +8,7 @@ alias dt="~/Desktop"
 alias m="~/Documents/Misc"
 alias repos="~/Repos"
 
+alias du="du -sh"
 alias g="grep"
 alias gas="~/.local/binutils/bin/i686-elf-as"
 alias gld="~/.local/binutils/bin/i686-elf-ld"
@@ -28,6 +29,7 @@ alias s="subl"
 alias ss="proxychains4 -q"
 alias sa="source activate"
 alias sd="source deactivate"
+alias stat="stat -x"
 
 alias v="vim"
 alias yarn="~/.config/yarn/global/node_modules/yarn/bin/yarn"
@@ -38,6 +40,7 @@ bindkey "^X^_" redo
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
+export PATH=$PATH:~/Scripts
 
 # Prevent LESS from clearing the screen
 export LESS=" -R -X "

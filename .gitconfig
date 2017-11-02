@@ -1,10 +1,10 @@
+[include]
+	path = ~/.gitconfig_local
 [color]
 	ui=true
 [core]
 	autocrlf = input
 	excludesfile = ~/.gitignore_global
-[include]
-	path = ~/.gitconfig_local
 [push]
 	default = simple
 [pull]
@@ -15,7 +15,7 @@
 	b = branch
 	c = clone
 	co = checkout
-	cm = git add -A && git commit -am
+	cm = !git add -A && git commit -am
 	d = diff
 	lg = log --oneline --decorate --all --graph
 	s = status -s
@@ -23,3 +23,12 @@
 	helper = osxkeychain
 [http]
 	proxy = http://127.0.0.1:1087
+[diff]
+	tool = diffmerge
+[difftool "diffmerge"]
+	cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	trustExitCode = true
+	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
