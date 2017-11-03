@@ -1470,11 +1470,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>569 203 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>261 259 796 473 0 0 1280 778 </string>
+	<string>236 265 918 381 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>80 194 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>72 141 1000 622 0 0 1280 778 </string>
+	<string>73 254 984 495 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>203 134 890 625 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -2204,6 +2204,8 @@
 			<true/>
 			<key>Use Tab Color</key>
 			<false/>
+			<key>Use Underline Color</key>
+			<false/>
 			<key>Vertical Spacing</key>
 			<real>1.2000000000000002</real>
 			<key>Visual Bell</key>
@@ -2296,7 +2298,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-27T23:07:25Z</date>
+	<date>2017-11-01T05:14:43Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>

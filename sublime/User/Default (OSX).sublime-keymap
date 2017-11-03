@@ -1,18 +1,16 @@
-[
-    { "keys": ["super+t"], "command": "new_file" },
-    { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-
+[    
+    // find realted
     { "keys": ["shift+super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
     { "keys": ["ctrl+super+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["super+enter"], "command": "toggle_full_screen"  },
     { "keys": ["shift+super+g"], "command": "find_all_under" },
     { "keys": ["ctrl+super+g"], "command": "find_prev" },
 
+    // key r
     { "keys": ["super+r"], "command": "goto_definition" },
     {"keys": ["shift+super+r"], "command": "reindent", "args": {"single_line": false}},
 
-    {"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 12.0}, "context": [{"key": "setting.command_mode"}]},
-    {"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -12.0}, "context": [{"key": "setting.command_mode"}]},
-
+    // vim esc
     { "keys": ["j", "k"], "command": "exit_insert_mode",
         "context":
         [
@@ -27,5 +25,45 @@
             { "key": "setting.is_widget", "operand": false }
         ]
     },
-    
+    // hexviewer
+
+    {
+        "keys": ["super+h"],
+        "command": "hex_viewer"
+    },
+    {
+        "keys": ["shift+super+h"],
+        "command": "hex_show_inspector"
+    },
+
+    // vim page up and down
+    { "keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 12.0}, "context": [{"key": "setting.command_mode"}]},
+    { "keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -12.0}, "context": [{"key": "setting.command_mode"}]},
+
+    // new tab
+    { "keys": ["super+t"], "command": "new_file" },
+    { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+
+    // layout
+    { "keys": ["shift+super+1"],
+        "command": "set_layout",
+        "args":
+        {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]}},
+    { "keys": ["shift+super+3"],
+        "command": "set_layout",
+        "args":
+        { "cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]}},
+    { "keys": ["shift+super+2"],
+        "command": "set_layout",
+        "args":
+        {"cols": [0.0, 1.0],"rows": [0.0, 0.5, 1.0],"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]}},
+
+    // jump and move between groups
+    { "keys": ["super+0"], "command": "focus_side_bar" },
+    { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
+    { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
+
+    { "keys": ["shift+alt+1"], "command": "move_to_group", "args": { "group": 0 } },
+    { "keys": ["shift+alt+2"], "command": "move_to_group", "args": { "group": 1 } },
+
 ]

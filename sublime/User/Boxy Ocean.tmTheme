@@ -25,8 +25,6 @@
                 <string>#cdd3de</string>
                 <key>guide</key>
                 <string>#202124</string>
-                <key>invisibles</key>
-                <string>#65737e</string>
                 <key>lineHighlight</key>
                 <string>#ffffff09</string>
                 <key>popupCss</key>
@@ -70,9 +68,9 @@ a {
 }
 </string>
                 <key>selection</key>
-                <string>#ffffff30</string>
+                <string>#ffffff42</string>
                 <key>selectionBorder</key>
-                <string>#ffffff25</string>
+                <string>#ffffff42</string>
                 <key>stackGuide</key>
                 <string>#ffffff25</string>
             </dict>
