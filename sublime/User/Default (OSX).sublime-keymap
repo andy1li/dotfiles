@@ -25,20 +25,14 @@
             { "key": "setting.is_widget", "operand": false }
         ]
     },
-    // hexviewer
-
-    {
-        "keys": ["super+h"],
-        "command": "hex_viewer"
-    },
-    {
-        "keys": ["shift+super+h"],
-        "command": "hex_show_inspector"
-    },
 
     // vim page up and down
     { "keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 12.0}, "context": [{"key": "setting.command_mode"}]},
     { "keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -12.0}, "context": [{"key": "setting.command_mode"}]},
+
+    // hexviewer
+    { "keys": ["super+h"], "command": "hex_viewer" },
+    { "keys": ["shift+super+h"], "command": "hex_show_inspector" },
 
     // new tab
     { "keys": ["super+t"], "command": "new_file" },
