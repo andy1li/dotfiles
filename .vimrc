@@ -24,6 +24,7 @@ call plug#begin()
 Plug 'https://github.com/mhartington/oceanic-next.git'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 "Plug 'mattn/emmet-vim'"

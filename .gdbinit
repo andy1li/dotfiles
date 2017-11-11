@@ -67,6 +67,8 @@
 #   TODO:
 #
 
+set startup-with-shell off
+
 # __________________gdb options_________________
 
 # set to 1 to have ARM target debugging as default, use the "arm" command to switch inside gdb
