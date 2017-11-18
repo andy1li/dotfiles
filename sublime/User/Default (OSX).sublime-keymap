@@ -30,6 +30,7 @@
     { "keys": ["super+n"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
 
     // layout
+    { "keys": ["shift+super+0"], "command": "toggle_side_bar" },
     { "keys": ["shift+super+1"],"command": "set_layout",
         "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]}},
     { "keys": ["shift+super+3"], "command": "set_layout",

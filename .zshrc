@@ -1,12 +1,9 @@
 # aliases and bindkeys
-alias dotfiles="~/Repos/dotfiles"
 alias dotfiles_backup="~/Repos/dotfiles/backup.zsh"
 
 alias dc="~/Documents"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
-alias m="~/Documents/Misc"
-alias repos="~/Repos"
 
 alias du="du -sh"
 alias g="grep"
@@ -123,7 +120,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-plugins=(zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions autojump)
 ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh

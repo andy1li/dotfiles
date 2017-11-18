@@ -39,6 +39,7 @@
 	"theme_dropdown_atomized": true,
 	"theme_find_panel_atomized": true,
 	"theme_find_panel_close_hidden": true,
+	"theme_find_panel_padding_xs": true,
 	"theme_font_md": true,
 	"theme_minimap_viewport_opacity_hg": true,
 	"theme_panel_switcher_atomized": true,
