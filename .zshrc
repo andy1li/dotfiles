@@ -8,8 +8,6 @@ alias dt="~/Desktop"
 alias du="du -sh"
 alias g="git"
 alias gr="grep"
-alias gas="~/.local/binutils/bin/i686-elf-as"
-alias gld="~/.local/binutils/bin/i686-elf-ld"
 alias gdb="gdb -q"
 alias gon="git config --global http.proxy http://127.0.0.1:1087"
 alias goff="git config --global --unset http.proxy"
@@ -18,9 +16,7 @@ alias hex="hexdump -C"
 alias jnb="jupyter notebook"
 alias locate="mdfind -name"
 
-alias octave="/Applications/Octave.app/Contents/Resources/usr/bin/octave-cli"
 alias p="ipython --no-banner"
-alias qemu="/usr/local/Cellar/qemu/2.8.0/bin/qemu-system-i386"
 alias R='R --no-save --quiet'
 alias s="subl"
 
@@ -30,11 +26,9 @@ alias sd="source deactivate"
 alias stat="stat -x"
 
 alias v="vim"
-alias yarn="~/.config/yarn/global/node_modules/yarn/bin/yarn"
 alias z="subl ~/.zshrc"
 
 bindkey "^X^_" redo
-
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
@@ -50,7 +44,6 @@ export LESS=" -R -X "
 stty -echoctl
 # NO_BEEP
 setopt NO_BEEP
-
 
 # language environment
 export LC_ALL=en_US.UTF-8
@@ -125,6 +118,4 @@ plugins=(zsh-syntax-highlighting zsh-autosuggestions autojump)
 ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh
-
-
 

@@ -1,9 +1,11 @@
 [    
     { "keys": ["super+enter"], "command": "toggle_full_screen"  },
 
-    // find realted
+    // find related
     { "keys": ["shift+super+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
     { "keys": ["ctrl+super+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    { "keys": ["ctrl+super+g"], "command": "find_prev" },
+    { "keys": ["shift+super+g"], "command": "find_all_under" },
 
     // key r
     { "keys": ["super+r"], "command": "goto_definition" },
