@@ -1,6 +1,4 @@
 # aliases and bindkeys
-alias dotfiles_backup="~/Repos/dotfiles/backup.zsh"
-
 alias dc="~/Documents"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
@@ -16,8 +14,11 @@ alias hex="hexdump -C"
 alias jnb="jupyter notebook"
 alias locate="mdfind -name"
 
+alias o="open"
+alias o.="open ."
 alias p="ipython --no-banner"
 alias R='R --no-save --quiet'
+alias rl="readlink"
 alias s="subl"
 
 alias ss="proxychains4 -q"
@@ -111,6 +112,10 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+source "/usr/local/opt/nvm/nvm.sh"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
