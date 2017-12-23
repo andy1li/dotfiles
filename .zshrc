@@ -17,7 +17,7 @@ alias locate="mdfind -name"
 alias o="open"
 alias o.="open ."
 alias p="ipython --no-banner"
-alias R='R --no-save --quiet'
+alias R="R --no-save --quiet"
 alias rl="readlink"
 alias s="subl"
 
@@ -115,7 +115,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-source "/usr/local/opt/nvm/nvm.sh"
+alias nvm_init="source /usr/local/opt/nvm/nvm.sh"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
