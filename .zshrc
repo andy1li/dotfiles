@@ -13,6 +13,7 @@ alias goff="git config --global --unset http.proxy"
 alias hex="hexdump -C"
 alias jnb="jupyter notebook"
 alias locate="mdfind -name"
+alias mongod="mongod --config /usr/local/etc/mongod.conf"
 
 alias o="open"
 alias o.="open ."
