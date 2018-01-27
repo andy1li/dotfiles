@@ -1,4 +1,4 @@
 {
-    "cmd": ["node", "$file"],
+    "cmd": ["/Users/andy/.nvm/versions/node/v8.9.1/bin/node", "$file"],
     "selector": "source.js"
 }
