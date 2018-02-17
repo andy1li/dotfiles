@@ -11,6 +11,10 @@
     { "keys": ["super+r"], "command": "goto_definition" },
     {"keys": ["shift+super+r"], "command": "reindent", "args": {"single_line": false}},
 
+    // move line
+    { "keys": ["shift+super+j"], "command": "swap_line_down" },
+    { "keys": ["shift+super+k"], "command": "swap_line_up" },
+
     // vim esc
     { "keys": ["j", "k"], "command": "exit_insert_mode", "context": [
         { "key": "setting.command_mode", "operand": false },

@@ -1,4 +1,4 @@
-# aliases and bindkeys
+# Aliases
 alias dc="~/Documents"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
@@ -30,7 +30,11 @@ alias stat="stat -x"
 alias v="vim"
 alias z="subl ~/.zshrc"
 
+# Bindkeys
 bindkey "^X^_" redo
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
@@ -44,10 +48,11 @@ export LESS=" -R -X "
 
 # Prevent echoing ctrl+c
 stty -echoctl
+
 # NO_BEEP
 setopt NO_BEEP
 
-# language environment
+# Language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
@@ -120,7 +125,7 @@ alias nvm_init="source /usr/local/opt/nvm/nvm.sh"
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
-plugins=(zsh-syntax-highlighting zsh-autosuggestions autojump)
+plugins=(zsh-syntax-highlighting zsh-autosuggestions history-substring-search autojump)
 ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh
