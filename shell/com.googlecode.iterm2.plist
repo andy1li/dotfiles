@@ -1444,17 +1444,17 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>569 153 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>64 226 770 429 0 0 1280 800 </string>
+	<string>250 148 770 429 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>93 155 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>212 453 260 68 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>194 186 912 507 0 0 1280 778 </string>
+	<string>360 17 902 339 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>424 129 822 483 0 0 1280 778 </string>
+	<string>250 38 902 459 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>281 -343 1011 677 0 0 1280 778 </string>
+	<string>281 0 912 459 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1730,7 +1730,7 @@
 			<key>Close Sessions On End</key>
 			<true/>
 			<key>Columns</key>
-			<integer>80</integer>
+			<integer>90</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -1852,7 +1852,7 @@
 			<key>Right Option Key Sends</key>
 			<integer>0</integer>
 			<key>Rows</key>
-			<integer>25</integer>
+			<integer>18</integer>
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
@@ -2009,7 +2009,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-01T08:31:20Z</date>
+	<date>2018-02-23T12:43:47Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
