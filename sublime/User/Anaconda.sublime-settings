@@ -1,5 +1,20 @@
 {
     "auto_project_switch": false,
     "auto_python_builder_enabled": false,
-    "anaconda_linting": false,
+    "enable_signatures_tooltip": false,
+    "python_interpreter": "/Users/andy/anaconda3/bin/python",
+
+    "anaconda_linting": true,
+    "anaconda_linter_delay": 0,
+    // "anaconda_linting_behaviour": "always",
+    "anaconda_linting_behaviour": "load-save",
+    // "anaconda_linter_persistent": true,
+    
+    "anaconda_linter_phantoms": true,
+    "anaconda_gutter_theme": "basic",
+    "anaconda_linter_mark_style": "none",
+    "anaconda_linter_underlines": true,
+    
+    "mypy": true,
+    "mypy_mypypath": "/Users/andy/anaconda3/bin/mypy"
 }

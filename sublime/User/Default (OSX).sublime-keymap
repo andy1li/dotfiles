@@ -9,7 +9,7 @@
 
     // key r
     { "keys": ["super+r"], "command": "goto_definition" },
-    {"keys": ["shift+super+r"], "command": "reindent", "args": {"single_line": false}},
+    { "keys": ["shift+super+r"], "command": "reindent", "args": {"single_line": false}},
 
     // move line
     { "keys": ["shift+super+j"], "command": "swap_line_down" },
@@ -39,11 +39,11 @@
     { "keys": ["shift+super+0"], "command": "toggle_side_bar" },
     { "keys": ["shift+super+1"],"command": "set_layout",
         "args": {"cols": [0.0, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1]]}},
-    { "keys": ["shift+super+3"], "command": "set_layout",
-        "args": { "cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]}},
     { "keys": ["shift+super+2"], "command": "set_layout",
         "args": {"cols": [0.0, 1.0],"rows": [0.0, 0.5, 1.0],"cells": [[0, 0, 1, 1], [0, 1, 1, 2]]}},
-
+    { "keys": ["shift+super+3"], "command": "set_layout",
+        "args": { "cols": [0.0, 0.5, 1.0], "rows": [0.0, 1.0], "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]}},
+    
     // jump and move between groups
     { "keys": ["super+0"], "command": "focus_side_bar" },
     { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
@@ -52,4 +52,10 @@
     { "keys": ["shift+alt+1"], "command": "move_to_group", "args": { "group": 0 } },
     { "keys": ["shift+alt+2"], "command": "move_to_group", "args": { "group": 1 } },
 
+    // anaconda
+    {
+        "command": "anaconda_doc", "keys": ["alt+tab"], "context": [
+            {"key": "selector", "operator": "equal", "operand": "source.python"}
+        ]
+    },
 ]

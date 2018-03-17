@@ -25,6 +25,7 @@ cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Boxy\ Ocean.tmT
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Boxy\ Tomorrow.sublime-theme ./sublime/user
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ./sublime/user
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings ./sublime/user
+cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Anaconda.sublime-settings ./sublime/user
 
 git add -A
 git commit -am "$(date)"
