@@ -1271,7 +1271,7 @@
 	<key>EnableProxyIcon</key>
 	<false/>
 	<key>FlashTabBarInFullscreen</key>
-	<true/>
+	<false/>
 	<key>FocusFollowsMouse</key>
 	<false/>
 	<key>GlobalKeyMap</key>
@@ -1297,6 +1297,20 @@
 			<key>Text</key>
 			<string>0x1f</string>
 		</dict>
+		<key>0xf700-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>2</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf701-0x300000</key>
+		<dict>
+			<key>Action</key>
+			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0xf702-0x280000</key>
 		<dict>
 			<key>Action</key>
@@ -1310,13 +1324,6 @@
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x01</string>
-		</dict>
-		<key>0xf702-0x320000</key>
-		<dict>
-			<key>Action</key>
-			<integer>2</integer>
-			<key>Text</key>
-			<string></string>
 		</dict>
 		<key>0xf703-0x280000</key>
 		<dict>
@@ -1332,13 +1339,6 @@
 			<key>Text</key>
 			<string>0x05</string>
 		</dict>
-		<key>0xf703-0x320000</key>
-		<dict>
-			<key>Action</key>
-			<integer>0</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 	</dict>
 	<key>HideActivityIndicator</key>
 	<false/>
@@ -1353,7 +1353,7 @@
 	<key>HideTabCloseButton</key>
 	<true/>
 	<key>HideTabNumber</key>
-	<true/>
+	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>JobName</key>
@@ -1362,6 +1362,8 @@
 	<integer>7</integer>
 	<key>LeftOption</key>
 	<integer>2</integer>
+	<key>LeftTabBarWidth</key>
+	<real>50</real>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
@@ -1444,17 +1446,17 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>569 153 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>250 148 770 429 0 0 1280 778 </string>
+	<string>424 173 770 429 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>93 155 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>212 453 260 68 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>360 17 902 339 0 0 1280 778 </string>
+	<string>479 25 781 315 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>250 38 902 459 0 0 1280 778 </string>
+	<string>139 177 912 459 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>281 0 912 459 0 0 1280 778 </string>
+	<string>92 255 961 459 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2009,13 +2011,13 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-02-23T12:43:47Z</date>
+	<date>2018-03-20T16:04:39Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowNewOutputIndicator</key>
 	<true/>
 	<key>ShowPaneTitles</key>
@@ -2025,7 +2027,7 @@
 	<key>SplitPaneDimmingAmount</key>
 	<real>0.59999999999999998</real>
 	<key>StretchTabsToFillBar</key>
-	<true/>
+	<false/>
 	<key>SuppressRestartAnnouncement</key>
 	<true/>
 	<key>SwitchPaneModifier</key>
@@ -2033,7 +2035,7 @@
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
-	<integer>0</integer>
+	<integer>2</integer>
 	<key>UKCrashReporterLastCrashReportDate</key>
 	<real>1511518592</real>
 	<key>UseBorder</key>
