@@ -5,8 +5,10 @@
     "python_interpreter": "/Users/andy/anaconda3/bin/python",
     "pep8": false,
 
+    "anaconda_gutter_theme": "retina",
+
     "anaconda_linting": true,
-    "anaconda_linter_delay": 0,
+    "anaconda_linter_delay": 0.5,
     // "anaconda_linting_behaviour": "always",
     "anaconda_linting_behaviour": "load-save",
     // "anaconda_linter_persistent": true,
@@ -21,7 +23,7 @@
     [
         // "Redefined",
         "UnusedImport",
-        // "UndefinedName",
+        "UndefinedaName",
         // "UndefinedLocal",
         // "UnusedVariable,",
         // "UndefinedExport",
