@@ -1304,10 +1304,24 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
+		<key>0xf700-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0xf701-0x300000</key>
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf701-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -1446,17 +1460,17 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>569 153 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>424 173 770 429 0 0 1280 778 </string>
+	<string>206 202 958 451 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>93 155 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>212 453 260 68 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>479 25 781 315 0 0 1280 778 </string>
+	<string>108 20 912 459 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>139 177 912 459 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>92 255 961 459 0 0 1280 778 </string>
+	<string>305 62 912 459 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2011,7 +2025,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-20T16:04:39Z</date>
+	<date>2018-04-17T10:45:01Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
