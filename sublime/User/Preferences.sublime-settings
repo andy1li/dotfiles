@@ -41,8 +41,8 @@
 		".git",
 		".udacity-pa"
 	],
-	"font_face": "Operator Mono Lig",
-	"font_size": 19,
+	"font_face": "Operator Mono SSm Lig",
+	"font_size": 18.8,
 	"highlight_line": true,
 	"ignored_packages":
 	[
