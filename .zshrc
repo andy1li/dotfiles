@@ -4,6 +4,7 @@ alias dl="~/Downloads"
 alias dt="~/Desktop"
 
 alias du="du -sh"
+alias h="ghci"
 alias g="git"
 alias gr="grep"
 alias gdb="gdb -q"
@@ -38,7 +39,9 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
+export PATH=~/Library/Haskell/bin:~/.local/bin:$PATH
 export PATH=$PATH:~/Scripts
+export __LOCAL__=true
 
 # Prevent LESS from clearing the screen
 export LESS=" -R -X "

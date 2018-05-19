@@ -8,9 +8,9 @@
     "anaconda_gutter_theme": "retina",
 
     "anaconda_linting": true,
-    "anaconda_linter_delay": 0.5,
+    "anaconda_linter_delay": 0,
     // "anaconda_linting_behaviour": "always",
-    "anaconda_linting_behaviour": "load-save",
+    "anaconda_linting_behaviour": "save",
     // "anaconda_linter_persistent": true,
     
     "anaconda_linter_phantoms": true,
