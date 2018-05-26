@@ -1125,13 +1125,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.17254902422428131</real>
+				<real>0.10196078568696976</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.16571931540966034</real>
+				<real>0.098039217293262482</real>
 				<key>Red Component</key>
-				<real>0.16230444610118866</real>
+				<real>0.094117648899555206</real>
 			</dict>
 			<key>Badge Color</key>
 			<dict>
@@ -1249,6 +1249,19 @@
 				<real>0.73586553335189819</real>
 				<key>Red Component</key>
 				<real>0.57319694757461548</real>
+			</dict>
+			<key>Tab Color</key>
+			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
+				<key>Blue Component</key>
+				<real>0.10196078568696976</real>
+				<key>Color Space</key>
+				<string>sRGB</string>
+				<key>Green Component</key>
+				<real>0.098039217293262482</real>
+				<key>Red Component</key>
+				<real>0.094117648899555206</real>
 			</dict>
 		</dict>
 	</dict>
@@ -1460,15 +1473,15 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>569 153 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>310 253 770 429 0 0 1280 778 </string>
+	<string>395 188 770 429 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>93 155 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>212 453 260 68 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>91 274 912 459 0 0 1280 778 </string>
+	<string>92 292 912 461 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>208 176 912 438 0 0 1280 778 </string>
+	<string>208 152 752 459 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>305 62 912 459 0 0 1280 778 </string>
 	<key>New Bookmarks</key>
@@ -1695,13 +1708,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10196078431372549</real>
+				<real>0.10196078568696976</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.098039215686274508</real>
+				<real>0.098039217293262482</real>
 				<key>Red Component</key>
-				<real>0.094117647058823528</real>
+				<real>0.094117648899555206</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -1914,13 +1927,13 @@
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10196078431372549</real>
+				<real>0.10196078568696976</real>
 				<key>Color Space</key>
 				<string>sRGB</string>
 				<key>Green Component</key>
-				<real>0.098039215686274508</real>
+				<real>0.098039217293262482</real>
 				<key>Red Component</key>
-				<real>0.094117647058823528</real>
+				<real>0.094117648899555206</real>
 			</dict>
 			<key>Tags</key>
 			<array/>
@@ -2042,7 +2055,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-16T01:02:46Z</date>
+	<date>2018-05-19T11:53:40Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
