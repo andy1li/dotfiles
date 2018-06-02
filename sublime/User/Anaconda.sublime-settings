@@ -17,7 +17,7 @@
     "anaconda_linter_mark_style": "none",
     
     "mypy": true,
-    "mypy_mypypath": "/Users/andy/anaconda3/bin/mypy",
+    "mypy_silent_imports": true,
 
     "pyflakes_explicit_ignore":
     [
