@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[for (auto &x: $1) {
+    $0
+}
+]]></content>
+<tabTrigger>for</tabTrigger>
+<description>Auto For Loop</description>
+<scope>source.c++, source.objc++</scope>
+</snippet>

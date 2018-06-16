@@ -39,7 +39,7 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
-export PATH=~/Library/Haskell/bin:~/.local/bin:$PATH
+export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
 export PATH=$PATH:~/Scripts
 export __LOCAL__=true
 

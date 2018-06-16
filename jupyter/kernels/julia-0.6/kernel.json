@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "/Applications/Julia-0.6.app/Contents/Resources/julia/bin/julia",
+    "-i",
+    "--startup-file=yes",
+    "--color=yes",
+    "/Users/andy/.julia/v0.6/IJulia/src/kernel.jl",
+    "{connection_file}"
+  ],
+  "display_name": "Julia 0.6",
+  "language": "julia"
+}
