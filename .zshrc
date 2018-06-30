@@ -41,7 +41,6 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 export PATH=~/anaconda3/bin:$PATH
 export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
 export PATH=$PATH:~/Scripts
-export __LOCAL__=true
 
 # Prevent LESS from clearing the screen
 export LESS=" -R -X "

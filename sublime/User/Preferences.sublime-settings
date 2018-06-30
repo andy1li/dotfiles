@@ -42,7 +42,7 @@
 		".udacity-pa"
 	],
 	"font_face": "Operator Mono SSm Lig",
-	"font_size": 18.8,
+	"font_size": 19.8,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -56,8 +56,6 @@
 	],
 	"line_padding_bottom": 2,
 	"line_padding_top": 1,
-	// "line_numbers": false,
-	// "gutter": false,
 	"open_files_in_new_window": false,
 	"remember_full_screen": true,
 	"save_on_focus_lost": true,
