@@ -1,16 +1,19 @@
-A File Icon.sublime-package
-Boxy Theme.sublime-package
+- A File Icon.sublime-package
+- Boxy Theme.sublime-package
+- Boxy Theme Addon - Widget Font Size
+- Boxy Theme Addon - Unified Mode
 Color Highlighter.sublime-package
 ES6-Toolkit.sublime-package
 Emmet.sublime-package
+GoSublime
 HexViewer.sublime-package
-Installed_Packages.txt
 Julia.sublime-package
 Makefile Improved.sublime-package
 Markdown Extended.sublime-package
 MarkdownPreview.sublime-package
 PackageResourceViewer.sublime-package
 React ES6 Snippets.sublime-package
-SideBarEnhancements.sublime-package
+- SideBarEnhancements.sublime-package
 SnippetMaker.sublime-package
-sublime-text-2-buildview.sublime-package
+SublimeHaskell
+- sublime-text-2-buildview.sublime-package

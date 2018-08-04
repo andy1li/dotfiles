@@ -9,21 +9,19 @@
 
     "anaconda_linting": true,
     "anaconda_linter_delay": 0,
-    // "anaconda_linting_behaviour": "always",
     "anaconda_linting_behaviour": "save",
-    // "anaconda_linter_persistent": true,
-    
+
     "anaconda_linter_phantoms": true,
     "anaconda_linter_mark_style": "none",
-    
+
     "mypy": true,
-    "mypy_silent_imports": true,
+    "mypy_almost_silent": true,
 
     "pyflakes_explicit_ignore":
     [
         // "Redefined",
         "UnusedImport",
-        "UndefinedaName",
+        "UndefinedName",
         // "UndefinedLocal",
         // "UnusedVariable,",
         // "UndefinedExport",

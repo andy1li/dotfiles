@@ -39,8 +39,12 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
-export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
 export PATH=$PATH:~/Scripts
+export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
+
+# GO
+export PATH=$PATH:~/go/bin
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Prevent LESS from clearing the screen
 export LESS=" -R -X "
@@ -132,3 +136,4 @@ ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh
 
+alias d="docker"

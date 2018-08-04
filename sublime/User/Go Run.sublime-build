@@ -1,0 +1,7 @@
+{
+    "cmd": ["/usr/local/opt/go/libexec/bin/go", "run", "$file"],
+    "selector": "source.go",
+    "env": {
+        "GOPATH": "/Users/andy/go"
+    },
+}

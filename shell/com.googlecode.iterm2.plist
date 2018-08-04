@@ -1466,24 +1466,30 @@
 	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>377 190 479 77 0 0 1280 778 </string>
+	<key>NSWindow Frame SUAutomaticUpdateAlert</key>
+	<string>359 453 616 174 0 0 1280 778 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>467 486 400 129 0 0 1280 778 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>357 289 620 392 0 0 1280 778 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>569 153 606 469 0 0 1280 778 </string>
+	<string>568 155 606 469 0 0 1280 778 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>395 188 770 429 0 0 1280 778 </string>
+	<string>241 109 1018 447 0 0 1280 778 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>93 155 592 584 0 0 1280 778 </string>
 	<key>NSWindow Frame com.apple.typography_panel_Menlo-Regular</key>
 	<string>212 453 260 68 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>92 292 912 461 0 0 1280 778 </string>
+	<string>251 51 912 459 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>208 152 752 459 0 0 1280 778 </string>
+	<string>126 262 912 459 0 0 1280 778 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>305 62 912 459 0 0 1280 778 </string>
+	<key>NeverWarnAboutShortLivedSessions_60B3FC34-4C94-41E6-857A-15E5EC722A67</key>
+	<true/>
+	<key>NeverWarnAboutShortLivedSessions_60B3FC34-4C94-41E6-857A-15E5EC722A67_selection</key>
+	<integer>0</integer>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2055,7 +2061,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-19T11:53:40Z</date>
+	<date>2018-07-19T23:42:24Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -2095,7 +2101,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.1.7</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>6</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
