@@ -16,11 +16,9 @@ cp ~/.zshrc .
 cp ~/.jupyter/custom/custom.css ./.jupyter
 
 # shell
-cp ~/.oh-my-zsh/themes/refined-mod.zsh-theme ./shell
+cp ~/.oh-my-zsh/custom/themes/refined-mod.zsh-theme ./shell
 
 # sublime
-cp -R ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/snippets ./sublime
-
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Color\ Highlighter/themes/Boxy\ Ocean.tmTheme ./sublime/user
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Boxy\ Tomorrow.sublime-theme ./sublime/user
 cp ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap ./sublime/user
