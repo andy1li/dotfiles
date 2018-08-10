@@ -58,4 +58,14 @@
             {"key": "selector", "operator": "equal", "operand": "source.python"}
         ]
     },
+
+    // encoding
+    {
+        "keys": ["super+ctrl+h"],
+        "command": "reopen", "args": {"encoding": "Hexadecimal" }
+    },
+    {
+        "keys": ["super+ctrl+u"],
+        "command": "reopen", "args": {"encoding": "UTF-8" }
+    }
 ]
