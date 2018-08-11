@@ -135,5 +135,5 @@ plugins=(zsh-syntax-highlighting zsh-autosuggestions history-substring-search au
 ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh
-
-alias d="docker"
+# alias d='dirs -v | head -10'
+alias d="docker" 

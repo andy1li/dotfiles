@@ -81,7 +81,7 @@ set $SETCOLOR1STLINE = 1
 # set to 0 to remove display of objectivec messages (default is 1)
 set $SHOWOBJECTIVEC = 0
 # set to 0 to remove display of cpu registers (default is 1)
-set $SHOWCPUREGISTERS = 0
+set $SHOWCPUREGISTERS = 1
 # set to 1 to enable display of stack (default is 0)
 set $SHOWSTACK = 0
 # set to 1 to enable display of data window (default is 0)
@@ -122,7 +122,7 @@ set $SHOW_NEST_INSN = 0
 
 set $CONTEXTSIZE_STACK = 6
 set $CONTEXTSIZE_DATA  = 8
-set $CONTEXTSIZE_CODE  = 8
+set $CONTEXTSIZE_CODE  = 10
 
 # __________________end gdb options_________________
 #
@@ -633,13 +633,13 @@ define flagsx86
     end
     # CF (carry) flag
     if ((unsigned int)$eflags & 1)
-        printf "C "
+        printf "C"
         set $_cf_flag = 1
     else
-        printf "c "
+        printf "c"
         set $_cf_flag = 0
     end
-    printf "\n"
+    # printf "\n"
 end
 document flagsx86
 Syntax: flagsx86
@@ -863,7 +863,7 @@ end
 
 define regx64
     # 64bits stuff
-    printf "  "
+    # printf "  "
     # RAX
     color $COLOR_REGNAME
     printf "RAX:"
@@ -900,12 +900,8 @@ define regx64
         color $COLOR_REGVAL
     end
     printf " 0x%016lX  ", $rsp
-    color_bold
-    color_underline
-    color $COLOR_CPUFLAGS
-    flags
-    color_reset
-    printf "  "
+    printf "\n"
+
     # RDI
     color $COLOR_REGNAME
     printf "RDI:"
@@ -942,108 +938,119 @@ define regx64
         color $COLOR_REGVAL
     end
     printf " 0x%016lX  ", $rcx
+    printf "\n"
     # RIP
     color $COLOR_REGNAME
     printf "RIP:"
     color $COLOR_REGVAL_MODIFIED
-    printf " 0x%016lX\n  ", $rip
-    # R8
+    printf " 0x%016lX ", $rip
+
     color $COLOR_REGNAME
-    printf "R8 :"
-    if ($r8 != $oldr8 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX  ", $r8
-    # R9
-    color $COLOR_REGNAME
-    printf "R9 :"
-    if ($r9 != $oldr9 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX  ", $r9
-    # R10
-    color $COLOR_REGNAME
-    printf "R10:"
-    if ($r10 != $oldr10 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX  ", $r10
-    # R11
-    color $COLOR_REGNAME
-    printf "R11:"
-    if ($r11 != $oldr11 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX  ", $r11
-    # R12
-    color $COLOR_REGNAME
-    printf "R12:"
-    if ($r12 != $oldr12 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX\n  ", $r12
-    # R13
-    color $COLOR_REGNAME
-    printf "R13:"
-    if ($r13 != $oldr13 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX  ", $r13
-    # R14
-    color $COLOR_REGNAME
-    printf "R14:"
-    if ($r14 != $oldr14 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX  ", $r14
-    # R15
-    color $COLOR_REGNAME
-    printf "R15:"
-    if ($r15 != $oldr15 && $SHOWREGCHANGES == 1)
-        color $COLOR_REGVAL_MODIFIED
-    else
-        color $COLOR_REGVAL
-    end
-    printf " 0x%016lX\n  ", $r15
-    color $COLOR_REGNAME
-    printf "CS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $cs
-    color $COLOR_REGNAME
-    printf "DS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $ds
-    color $COLOR_REGNAME
-    printf "ES:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $es
-    color $COLOR_REGNAME
-    printf "FS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $fs
-    color $COLOR_REGNAME
-    printf "GS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $gs
-    color $COLOR_REGNAME
-    printf "SS:"
-    color $COLOR_REGVAL
-    printf " %04X", $ss
+    printf " FLAGS:"
     color_reset
+    color_bold
+    color_underline
+    color $COLOR_CPUFLAGS
+    flags
+    color_reset
+
+    # R8
+    # color $COLOR_REGNAME
+    # printf "R8 :"
+    # if ($r8 != $oldr8 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX  ", $r8
+    # R9
+    # color $COLOR_REGNAME
+    # printf "R9 :"
+    # if ($r9 != $oldr9 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX  ", $r9
+    # R10
+    # color $COLOR_REGNAME
+    # printf "R10:"
+    # if ($r10 != $oldr10 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX  ", $r10
+    # R11
+    # color $COLOR_REGNAME
+    # printf "R11:"
+    # if ($r11 != $oldr11 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX  ", $r11
+    # R12
+    # color $COLOR_REGNAME
+    # printf "R12:"
+    # if ($r12 != $oldr12 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX\n  ", $r12
+    # R13
+    # color $COLOR_REGNAME
+    # printf "R13:"
+    # if ($r13 != $oldr13 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX  ", $r13
+    # R14
+    # color $COLOR_REGNAME
+    # printf "R14:"
+    # if ($r14 != $oldr14 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX  ", $r14
+    # R15
+    # color $COLOR_REGNAME
+    # printf "R15:"
+    # if ($r15 != $oldr15 && $SHOWREGCHANGES == 1)
+    #     color $COLOR_REGVAL_MODIFIED
+    # else
+    #     color $COLOR_REGVAL
+    # end
+    # printf " 0x%016lX\n  ", $r15
+    # color $COLOR_REGNAME
+    # printf "CS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $cs
+    # color $COLOR_REGNAME
+    # printf "DS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $ds
+    # color $COLOR_REGNAME
+    # printf "ES:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $es
+    # color $COLOR_REGNAME
+    # printf "FS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $fs
+    # color $COLOR_REGNAME
+    # printf "GS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $gs
+    # color $COLOR_REGNAME
+    # printf "SS:"
+    # color $COLOR_REGVAL
+    # printf " %04X", $ss
+    # color_reset
 end
 document regx64
 Syntax: regx64
@@ -1052,7 +1059,7 @@ end
 
 
 define regx86
-    printf "  "
+    printf " "
     # EAX
     color $COLOR_REGNAME
     printf "EAX:"
@@ -1088,16 +1095,11 @@ define regx86
     else
         color $COLOR_REGVAL
     end
-        printf " 0x%08X  ", $edx
-    color_bold
-    color_underline
-    color $COLOR_CPUFLAGS
-    flags
-    color_reset
-    printf "  "
+    printf " 0x%08X  ", $edx
+
     # ESI
     color $COLOR_REGNAME
-    printf "ESI:"
+    printf "\n ESI:"
     if ($esi != $oldesi && $SHOWREGCHANGES == 1)
         color $COLOR_REGVAL_MODIFIED
     else
@@ -1133,34 +1135,45 @@ define regx86
     printf " 0x%08X  ", $esp
     # EIP
     color $COLOR_REGNAME
-    printf "EIP:"
+    printf "\n EIP:"
     color $COLOR_REGVAL_MODIFIED
-    printf " 0x%08X\n  ", $eip
+    printf " 0x%08X ", $eip
+
     color $COLOR_REGNAME
-    printf "CS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $cs
-    color $COLOR_REGNAME
-    printf "DS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $ds
-    color $COLOR_REGNAME
-    printf "ES:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $es
-    color $COLOR_REGNAME
-    printf "FS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $fs
-    color $COLOR_REGNAME
-    printf "GS:"
-    color $COLOR_REGVAL
-    printf " %04X  ", $gs
-    color $COLOR_REGNAME
-    printf "SS:"
-    color $COLOR_REGVAL
-    printf " %04X", $ss
+    printf " FLAGS:"
     color_reset
+    color_bold
+    printf " "
+    color_underline
+    color $COLOR_CPUFLAGS
+    flags
+    color_reset
+
+    # color $COLOR_REGNAME
+    # printf "CS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $cs
+    # color $COLOR_REGNAME
+    # printf "DS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $ds
+    # color $COLOR_REGNAME
+    # printf "ES:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $es
+    # color $COLOR_REGNAME
+    # printf "FS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $fs
+    # color $COLOR_REGNAME
+    # printf "GS:"
+    # color $COLOR_REGVAL
+    # printf " %04X  ", $gs
+    # color $COLOR_REGNAME
+    # printf "SS:"
+    # color $COLOR_REGVAL
+    # printf " %04X", $ss
+    # color_reset
 end
 document regx86
 Syntax: regx86
@@ -1197,9 +1210,9 @@ define reg
         # call smallregisters
         smallregisters
         # display conditional jump routine
-        if ($64BITS == 1)
-            printf "\t\t\t\t"
-        end
+        # if ($64BITS == 1)
+        #     printf "\t\t\t\t"
+        # end
         dumpjump
         printf "\n"
         if ($SHOWREGCHANGES == 1)
@@ -1516,9 +1529,9 @@ define ddump
         color $COLOR_SEPARATOR
         printf "------------------------"
         printf "-------------------------------"
-        if ($64BITS == 1)
-            printf "-------------------------------------"
-        end
+        # if ($64BITS == 1)
+        #     printf "-------------------------------------"
+        # end
         color_bold
         color $COLOR_SEPARATOR
         printf "[data]\n"
@@ -2031,14 +2044,7 @@ set $displayobjectivec = 0
 define context 
     color $COLOR_SEPARATOR
     if $SHOWCPUREGISTERS == 1
-        printf "----------------------------------------"
-        printf "----------------------------------"
-        if ($64BITS == 1)
-            printf "---------------------"
-        end
-        color $COLOR_SEPARATOR
-        color_bold
-        printf "[regs]\n"
+        printf "---------------------------------------------[regs]-----------------------------------------------\n"
         color_reset
         reg
         color $CYAN
@@ -2046,20 +2052,20 @@ define context
     if $SHOWSTACK == 1
         color $COLOR_SEPARATOR
         if $ARM == 1
-       printf "[0x%08X]", $sp
-        else
-        if ($64BITS == 1)
-                printf "[0x%04X:0x%016lX]", $ss, $rsp
-        else
-            printf "[0x%04X:0x%08X]", $ss, $esp
+           printf "[0x%08X]", $sp
+            else
+            if ($64BITS == 1)
+                    printf "[0x%04X:0x%016lX]", $ss, $rsp
+            else
+                printf "[0x%04X:0x%08X]", $ss, $esp
+            end
         end
-    end
         color $COLOR_SEPARATOR
         printf "-------------------------"
         printf "-----------------------------"
-        if ($64BITS == 1)
-            printf "---------------------"
-        end
+        # if ($64BITS == 1)
+        #     printf "---------------------"
+        # end
         color $COLOR_SEPARATOR
         color_bold
         printf "[stack]\n"
@@ -2101,9 +2107,9 @@ define context
             if $displayobjectivec == 1
                 color $COLOR_SEPARATOR
                 printf "--------------------------------------------------------------------"
-                if ($64BITS == 1)
-                    printf "---------------------------------------------"
-                end
+                # if ($64BITS == 1)
+                #     printf "---------------------------------------------"
+                # end
                 color $COLOR_SEPARATOR
                 color_bold
                 printf "[ObjectiveC]\n"
@@ -2116,9 +2122,9 @@ define context
         if $displayobjectivec == 1
             color $COLOR_SEPARATOR
             printf "--------------------------------------------------------------------"
-            if ($64BITS == 1)
-                printf "---------------------------------------------"
-            end
+            # if ($64BITS == 1)
+            #     printf "---------------------------------------------"
+            # end
             color $COLOR_SEPARATOR
             color_bold
             printf "[ObjectiveC]\n"
@@ -2135,13 +2141,10 @@ define context
     end
 
     color $COLOR_SEPARATOR
-    printf "----------------------------------------------[code]----------------------"
-    if ($64BITS == 1)
-        printf "--------------------------"
-    end
+    printf "---------------------------------------------[code]-----------------------------------------------\n"
     color $COLOR_SEPARATOR
     color_bold
-    printf "\n"
+
     color_reset
     set $context_i = $CONTEXTSIZE_CODE
     if ($context_i > 0)
@@ -2171,11 +2174,7 @@ define context
     color $COLOR_SEPARATOR
     printf "----------------------------------------"
     printf "----------------------------------------"
-    if ($64BITS == 1)
-        printf "--------------------\n"
-    else
-        printf "\n"
-    end
+    printf "------------------\n"
     color_reset
 end
 document context
