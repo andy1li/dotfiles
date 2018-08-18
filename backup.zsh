@@ -7,7 +7,7 @@ cd ~/Repos/dotfiles
 cp ~/.gdbinit .
 cp ~/.gitconfig .
 cp ~/.gitignore_global .
-cp ~/.juliarc.jl .
+cp ~/.julia/config/startup.jl .
 cp ~/.octaverc .
 cp ~/.vimrc .
 cp ~/.zshrc .
