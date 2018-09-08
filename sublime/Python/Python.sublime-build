@@ -1,6 +1,8 @@
 {
     "cmd": ["/Users/andy/anaconda3/bin/python", "-u", "$file"],
+    // "shell_cmd": "/Users/andy/anaconda3/bin/python -u \"$file\"",
     "env": {
+        "TERM": "linux", "TERMINFO": "/etc/terminfo", // pwntools
         "LANG": "en_US.UTF-8",
         "PYTHONIOENCODING": "utf-8",
         "PYTHONPATH": "/Users/andy/anaconda3/lib/python3.6/site-packages"
@@ -12,7 +14,8 @@
     [
         {
             "name": "Run sample.in",
-            "cmd": ["/Users/andy/anaconda3/bin/python", "-u", "$file", "< sample.in"],
+            // "cmd": ["/Users/andy/anaconda3/bin/python", "-u", "$file", "< sample.in"],
+            "shell_cmd": "/Users/andy/anaconda3/bin/python -u \"$file\" < sample.in",
         }
     ]
 }

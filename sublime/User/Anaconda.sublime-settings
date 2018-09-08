@@ -15,7 +15,7 @@
     "anaconda_linter_mark_style": "none",
 
     "mypy": true,
-    "mypy_almost_silent": true,
+    "mypy_silent_imports": true,
 
     "pyflakes_explicit_ignore":
     [
