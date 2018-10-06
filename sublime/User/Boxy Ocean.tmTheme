@@ -16,20 +16,20 @@
                 <key>activeGuide</key>
                 <string>#ffffff25</string>
                 <key>background</key>
-                <string>#202124</string>
+                <string>#232328</string>
                 <key>caret</key>
-                <string>#cdd3de</string>
+                <string>#dde3ee</string>
                 <key>foreground</key>
-                <string>#cdd3de</string>
+                <string>#eaf0f8</string>
                 <key>guide</key>
-                <string>#202124</string>
+                <string>#232328</string>
                 <key>lineHighlight</key>
                 <string>#ffffff09</string>
                 <key>popupCss</key>
 				<string>
 html {
-  background-color: #2d3c44;
-  color: #cdd3de;
+  background-color: #232328;
+  color: #eaf0f8;
 }
 
 a {

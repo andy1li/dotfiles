@@ -30,6 +30,7 @@
     // hexviewer
     { "keys": ["super+h"], "command": "hex_viewer" },
     { "keys": ["shift+super+h"], "command": "hex_show_inspector" },
+    { "keys": ["shift+super+e"], "command": "hex_editor" },
 
     // new tab
     { "keys": ["super+t"], "command": "new_file" },
