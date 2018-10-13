@@ -66,9 +66,9 @@ a {
 }
 </string>
                 <key>selection</key>
-                <string>#ffffff42</string>
+                <string>#444</string>
                 <key>selectionBorder</key>
-                <string>#ffffff42</string>
+                <string>#484848</string>
                 <key>stackGuide</key>
                 <string>#ffffff25</string>
 			</dict>

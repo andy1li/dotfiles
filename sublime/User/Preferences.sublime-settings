@@ -102,7 +102,6 @@
 	"theme_tooltips_font_lg": true,
 	"theme_unified": true,
 	"translate_tabs_to_spaces": true,
-	"update_check": false,
 	"vintage_start_in_command_mode": true,
 	"word_wrap": true
 }
