@@ -11,6 +11,7 @@
 	"create_window_at_startup": true,
 	"draw_white_space": "none",
 	"enable_hexadecimal_encoding": false,
+	"enable_tab_scrolling": false,
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
