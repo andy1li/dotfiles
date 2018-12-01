@@ -18,7 +18,7 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf"
 
 alias o="open"
 alias o.="open ."
-alias p="ipython --no-banner --colors=linux --matplotlib osx"
+alias p="ipython --no-banner --matplotlib osx"
 alias R="R --no-save --quiet"
 alias rl="readlink"
 alias s="subl"
