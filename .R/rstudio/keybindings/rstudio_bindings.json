@@ -1,0 +1,10 @@
+{
+    "executeAllCode" : "Cmd+B",
+    "executeCode" : "Shift+Enter",
+    "executeCodeWithoutMovingCursor" : "Ctrl+Enter",
+    "insertAssignmentOperator" : "Ctrl+=",
+    "insertChunk" : "Shift+Cmd+I",
+    "insertPipeOperator" : "Shift+Cmd+P",
+    "newSourceDoc" : "Cmd+T",
+    "toggleFullScreen" : "Cmd+Enter"
+}
