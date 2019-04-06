@@ -136,4 +136,8 @@ ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh
 # alias d='dirs -v | head -10'
-alias d="docker" 
+alias d="docker"
+
+# thefuck
+eval $(thefuck --alias) 
+alias fuck="fuck --yeah"
