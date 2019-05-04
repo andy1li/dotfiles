@@ -1604,6 +1604,7 @@ div.cell.code_cell .input_prompt {
  border-right: 2px solid #3572c6;
  padding-right: .8em;
  padding-top: .55em;
+ height: 100%;
 }
 div.cell.selected .prompt {
  top: 0;
@@ -1736,8 +1737,8 @@ div.out_prompt_overlay.prompt {
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
- min-width: 15.55ex !important;
- width: 15.55ex !important;
+ min-width: 13ex !important;
+ width: 13ex !important;
  border-right: 2px solid transparent;
  color: transparent;
 }
@@ -1750,8 +1751,8 @@ div.out_prompt_overlay.prompt:hover {
  -moz-border-radius: 2px;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
- min-width: 15.55ex !important;
- width: 15.55ex !important;
+ min-width: 13ex !important;
+ width: 13ex !important;
  border-right: 2px solid #3e4458 !important;
 }
 div.cell.code_cell .output_prompt {
@@ -1851,8 +1852,9 @@ div.cell.text_cell.rendered .prompt {
  font-weight: normal;
  color: #446489 !important;
  text-align: right !important;
- min-width: 15.55ex !important;
- width: 15.55ex !important;
+ min-width: 11.5ex !important;
+ width: 13ex !important;
+ /*margin-left: 5px;*/
  background-color: #303845;
  border-right: 2px solid rgba(53,114,198,.5);
  border-left: 4px solid #303845;
