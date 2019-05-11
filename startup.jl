@@ -1,3 +1,5 @@
+# ~/.julia/config/startup.jl
+
 ENV["PYTHON"] = "/Users/andy/anaconda3/bin/python"
 ENV["JUPYTER"] = "/Users/andy/anaconda3/bin/jupyter"
 
