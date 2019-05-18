@@ -62,6 +62,9 @@ setopt NO_BEEP
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# Homebrew
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.

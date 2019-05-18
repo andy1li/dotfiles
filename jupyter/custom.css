@@ -2888,7 +2888,7 @@ div#pager .ui-resizable-handle {
 }
 div.CodeMirror,
 div.CodeMirror pre {
- font-family: monospace, monospace;
+ font-family: "Operator Mono SSm Lig", monospace;
  font-size: 12pt;
  line-height: 170%;
  color: #cdd2e9;
