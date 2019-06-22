@@ -10,8 +10,7 @@
         "shift-cmd-up": "jupyter-notebook:move-cell-up",
         "shift-cmd-down": "jupyter-notebook:move-cell-down",
         "shift-cmd-j": "jupyter-notebook:move-cell-down",
-        "shift-cmd-k": "jupyter-notebook:move-cell-up",
-        "alt-cmd--": "jupyter-notebook:split-cell-at-cursor"
+        "shift-cmd-k": "jupyter-notebook:move-cell-up"
       }
     }
   },
