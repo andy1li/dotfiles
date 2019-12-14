@@ -7,9 +7,10 @@
 
     "anaconda_gutter_theme": "retina",
 
-    "anaconda_linting": true,
-    "anaconda_linter_delay": 0,
+    // "anaconda_linting": false,
     "anaconda_linting_behaviour": "save",
+    "anaconda_linter_delay": 0,
+    // "anaconda_linter_delay": 0.5,
 
     "anaconda_linter_phantoms": true,
     "anaconda_linter_mark_style": "none",
@@ -17,6 +18,7 @@
     "mypy": true,
     // "mypy_almost_silent": true,
     "mypy_silent_imports": true,
+    // "mypy_suppress_stub_warnings": false,
 
     "pyflakes_explicit_ignore":
     [

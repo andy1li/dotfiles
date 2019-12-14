@@ -7,7 +7,7 @@ alias du="du -sh"
 alias h="ghci"
 alias g="git"
 alias gr="grep"
-alias gdb="gdb -q"
+alias gdb="sudo gdb -q"
 alias gon="git config --global http.proxy http://127.0.0.1:1087"
 alias goff="git config --global --unset http.proxy"
 
