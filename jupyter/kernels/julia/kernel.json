@@ -1,12 +1,15 @@
 {
+  "display_name": "Julia 1.4.2",
   "argv": [
-    "/Applications/Julia-1.1.app/Contents/Resources/julia/bin/julia",
+    "/Applications/Julia-1.4.app/Contents/Resources/julia/bin/julia",
     "-i",
     "--startup-file=yes",
     "--color=yes",
+    "--project=@.",
     "/Users/andy/.julia/packages/IJulia/gI2uA/src/kernel.jl",
     "{connection_file}"
   ],
-  "display_name": "Julia 1.1",
-  "language": "julia"
+  "language": "julia",
+  "env": {},
+  "interrupt_mode": "signal"
 }
