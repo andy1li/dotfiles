@@ -49,8 +49,7 @@
 	"ignored_packages":
 	[
 		"Makefile",
-		"Markdown",
-		"zzz A File Icon zzz"
+		"Markdown"
 	],
 	"indent_guide_options":
 	[
