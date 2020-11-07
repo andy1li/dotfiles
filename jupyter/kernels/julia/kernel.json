@@ -1,7 +1,7 @@
 {
-  "display_name": "Julia 1.4.2",
+  "display_name": "Julia 1.5.2",
   "argv": [
-    "/Applications/Julia-1.4.app/Contents/Resources/julia/bin/julia",
+    "/Applications/Julia-1.5.app/Contents/Resources/julia/bin/julia",
     "-i",
     "--startup-file=yes",
     "--color=yes",
