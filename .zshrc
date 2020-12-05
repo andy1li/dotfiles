@@ -18,6 +18,7 @@ alias mongod="mongod --config /usr/local/etc/mongod.conf"
 
 alias o="open"
 alias o.="open ."
+alias octave="octave --quiet"
 alias p="ipython --no-banner --matplotlib=tk"
 alias R="R --no-save --quiet"
 alias rl="readlink"
