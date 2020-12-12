@@ -24,6 +24,7 @@ alias R="R --no-save --quiet"
 alias rl="readlink"
 alias s="subl"
 
+alias adb="~/Library/Nemu/adb"
 alias ss="proxychains4 -q"
 alias sa="source activate"
 alias sd="source deactivate"
