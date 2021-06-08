@@ -1,8 +1,17 @@
 [
   {
-      "class": "title_bar",
-      "fg": [160, 163, 169],
-      // "bg": [20, 21, 24]
-      "bg": [30, 29, 34]
+    "class": "title_bar",
+    "fg": [160, 163, 169],
+    // "bg": [20, 21, 24]
+    "bg": [30, 29, 34],
+  },
+  {
+    "class": "text_line_control",
+    "font.face": "Roboto Mono",
+    "font.size": 16
+  },
+  {
+    "class": "quick_panel_label",
+    "font.size": 15
   },
 ]

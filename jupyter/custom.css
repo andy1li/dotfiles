@@ -4,6 +4,7 @@ div#notebook {
  line-height: 170%;
  color: #cdd2e9;
  -webkit-font-smoothing: antialiased !important;
+ padding-top: 3px !important;
 }
 body,
 div.body {
@@ -30,6 +31,27 @@ a:hover,
 a:focus {
  color: #d8dcee;
  -webkit-font-smoothing: antialiased !important;
+}
+div#maintoolbar {
+ position: absolute;
+ width: 90%;
+ margin-left: -10%;
+ padding-right: 8%;
+ float: left;
+ background: transparent !important;
+}
+#maintoolbar {
+ margin-bottom: -3px;
+ margin-top: 0px;
+ border: 0px;
+ min-height: 27px;
+ padding-top: 2px;
+ padding-bottom: 0px;
+}
+#maintoolbar .container {
+ width: 75%;
+ margin-right: auto;
+ margin-left: auto;
 }
 .list_header,
 div#notebook_list_header.row.list_header {
@@ -586,9 +608,8 @@ div.notification_widget {
  margin-right: 0px;
  margin-left: 0px;
  padding-right: 0px;
- /*vertical-align: text-top !important;*/
- vertical-align: baseline !important;
- /*margin-top: 6px !important;*/
+ vertical-align: text-top !important;
+ margin-top: 6px !important;
  background: transparent !important;
  background-color: transparent !important;
  font-size: 9pt !important;
@@ -638,7 +659,6 @@ div.notification_widget.info,
 }
 #notification_trusted {
  font-family: sans-serif;
- font-size: 17px !important;
  border: none;
  background: transparent;
  background-color: transparent;
@@ -652,13 +672,13 @@ div.notification_area {
  float: right !important;
  position: static;
  cursor: pointer;
- padding-top: 7px;
+ padding-top: 6px;
  padding-right: 4px;
 }
 div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
  font-size: 9pt !important;
  z-index: 0;
- /*margin-top: -5px !important;*/
+ margin-top: -5px !important;
 }
 #modal_indicator {
  float: right !important;
@@ -676,7 +696,7 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
  border-left: 2px solid #4c8be2;
  padding-top: 0px;
  padding-bottom: 4px;
- margin-top: 8px !important;
+ margin-top: 10px !important;
  margin-left: -2px;
  padding-left: 5px !important;
 }
@@ -688,7 +708,7 @@ div#notification_notebook.notification_widget.btn.btn-xs.navbar-btn {
  padding-left: 5px;
  padding-right: 5px;
  margin-top: 4px;
- vertical-align: sub;
+ vertical-align: text-top;
  padding-bottom: 0px;
 }
 .kernel_idle_icon:before {
@@ -768,9 +788,8 @@ div.notification_widget {
  margin-right: 0px;
  margin-left: 0px;
  padding-right: 0px;
- /*vertical-align: text-top !important;*/
- vertical-align: baseline !important;
- /*margin-top: 6px !important;*/
+ vertical-align: text-top !important;
+ margin-top: 6px !important;
  z-index: 1000;
 }
 #kernel_logo_widget,
@@ -1439,8 +1458,9 @@ th,
 td,
 span,
 a {
- text-rendering: auto;
- -webkit-font-smoothing: antialiased;
+ text-rendering: geometricPrecision;
+ -webkit-font-smoothing: subpixel-antialiased;
+ font-weight: 400;
 }
 div.input_area {
  background-color: #303845;
@@ -1564,11 +1584,11 @@ div.cell.text_cell.jupyter-soft-selected,
 div.cell.text_cell.selected.jupyter-soft-selected {
  border-left-color: #33517c !important;
  border-left-width: 0px !important;
- padding-left: 7px !important;
+ padding-left: 26px !important;
  border-right-color: #33517c !important;
  border-right-width: 0px !important;
  background: #33517c !important;
- border-radius: 6px !important;
+ border-radius: 5px !important;
 }
 div.cell.jupyter-soft-selected .input,
 div.cell.selected.jupyter-soft-selected .input {
@@ -1590,7 +1610,7 @@ div.prompt,
  width: 11.5ex !important;
 }
 div.prompt.input_prompt {
- font-size: 10pt !important;
+ font-size: 9pt !important;
  background-color: #303845;
  border-top: 0px;
  border-top-right-radius: 0px;
@@ -1602,9 +1622,6 @@ div.prompt.input_prompt {
 }
 div.cell.code_cell .input_prompt {
  border-right: 2px solid #3572c6;
- padding-right: .8em;
- padding-top: .55em;
- height: 100%;
 }
 div.cell.selected .prompt {
  top: 0;
@@ -1618,7 +1635,7 @@ div.cell.selected .prompt {
 .run_this_cell {
  visibility: hidden;
  color: transparent;
- padding-top: .05em;
+ padding-top: 0px;
  padding-bottom: 0px;
  padding-left: 3px;
  padding-right: 12px;
@@ -1674,31 +1691,29 @@ div.output_subarea.output_text {
  color: #cdd2e9;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
+ margin-left: 11.5px;
 }
 div.output_area pre {
  font-family: monospace, monospace;
- font-size: 11pt !important;
+ font-size: 8.5pt !important;
  line-height: 151% !important;
  color: #cdd2e9;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
- padding-left: 0.5em;
 }
 div.output_area {
  display: -webkit-box;
 }
 div.output_html {
  font-family: monospace, monospace;
- font-size: 11.5pt;
+ font-size: 8.5pt;
  color: #dbdfef;
  background-color: #384151;
  background: #384151;
- padding-left: 0;
 }
 div.output_subarea {
  overflow-x: auto;
- padding: 0.8em !important;
- padding-left: 1.1em !important;
+ padding: .8em !important;
  -webkit-box-flex: 1;
  -moz-box-flex: 1;
  box-flex: 1;
@@ -1716,7 +1731,6 @@ div.btn.btn-default.output_collapsed:hover {
 }
 div.prompt.output_prompt {
  font-family: monospace, monospace;
- font-size: 9.5pt !important;
  font-weight: bold !important;
  background-color: #384151;
  color: transparent;
@@ -1724,21 +1738,20 @@ div.prompt.output_prompt {
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
- min-width: 12ex !important;
- width: 12ex !important;
+ min-width: 11.5ex !important;
+ width: 11.5ex !important;
  border-right: 2px solid transparent;
 }
 div.out_prompt_overlay.prompt {
  font-family: monospace, monospace;
- font-size: 9.5pt !important;
  font-weight: bold !important;
  background-color: #384151;
  border-bottom-left-radius: 2px;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
- min-width: 13ex !important;
- width: 13ex !important;
+ min-width: 11.5ex !important;
+ width: 11.5ex !important;
  border-right: 2px solid transparent;
  color: transparent;
 }
@@ -1751,8 +1764,8 @@ div.out_prompt_overlay.prompt:hover {
  -moz-border-radius: 2px;
  border-top-right-radius: 0px;
  border-top-left-radius: 0px;
- min-width: 13ex !important;
- width: 13ex !important;
+ min-width: 11.5ex !important;
+ width: 11.5ex !important;
  border-right: 2px solid #3e4458 !important;
 }
 div.cell.code_cell .output_prompt {
@@ -1852,9 +1865,8 @@ div.cell.text_cell.rendered .prompt {
  font-weight: normal;
  color: #446489 !important;
  text-align: right !important;
- min-width: 11.5ex !important;
- width: 13ex !important;
- /*margin-left: 5px;*/
+ min-width: 14.5ex !important;
+ width: 14.5ex !important;
  background-color: #303845;
  border-right: 2px solid rgba(53,114,198,.5);
  border-left: 4px solid #303845;
@@ -1865,19 +1877,19 @@ div.cell.text_cell.unrendered .prompt {
  font-weight: normal;
  color: #446489 !important;
  text-align: right !important;
- min-width: 15.55ex !important;
- width: 15.55ex !important;
+ min-width: 14.5ex !important;
+ width: 14.5ex !important;
  border-right: 2px solid rgba(53,114,198,.5);
  border-left: 4px solid #303845;
  background-color: #303845;
 }
 div.cell.text_cell.rendered .prompt {
- border-right: 2px solid #3572c6;
+ border-right: 2px solid rgba(53,114,198,.5);
 }
 div.cell.text_cell.rendered.selected .prompt {
  top: 0;
  border-left: 4px solid #2769c3;
- border-right: 2px solid #3572c6;
+ border-right: 2px solid rgba(53,114,198,.5);
 }
 div.text_cell.unrendered.selected .prompt,
 div.text_cell.rendered.selected .prompt {
@@ -2068,11 +2080,10 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
  white-space: normal;
  max-width: none;
  border: none;
- font-size: 10.5pt;
 }
 .rendered_html td {
  font-family: sans-serif !important;
- font-size: 11pt;
+ font-size: 9.3pt;
 }
 .rendered_html table {
  font-family: sans-serif !important;
@@ -2771,6 +2782,9 @@ div#short-key-bindings-intro.well,
 .terminal-app {
  background: #262931;
 }
+.terminal-app > #header {
+ background: #262931;
+}
 .terminal-app .terminal {
  font-family: monospace, monospace;
  font-size: 11pt;
@@ -2888,17 +2902,16 @@ div#pager .ui-resizable-handle {
 }
 div.CodeMirror,
 div.CodeMirror pre {
- font-family: "Operator Mono SSm Lig", monospace;
- font-size: 12pt;
+ font-family: monospace, monospace;
+ font-size: 11pt;
  line-height: 170%;
  color: #cdd2e9;
 }
 div.CodeMirror-lines {
- padding-bottom: .9em;
+ padding-bottom: .8em;
  padding-left: .5em;
- padding-right: 1.5em;
- /*padding-top: .7em;*/
- padding-top: .4em;
+ padding-right: .5em;
+ padding-top: .1em;
 }
 span.ansiblack,
 .ansi-black-fg {
@@ -2987,7 +3000,7 @@ div.tooltiptext.bigtooltip {
  max-width: 800px;
 }
 .cm-s-ipython.CodeMirror {
- font-family: monospace, monospace;
+ font-family: "Operator Mono SSm Lig", monospace;
  font-size: 11pt;
  background: #303845;
  color: #cdd2e9;
@@ -3098,11 +3111,13 @@ div.CodeMirror-linenumber,
  color: #8fca9a;
 }
 div.CodeMirror span.CodeMirror-matchingbracket {
- color: #e4e8ee;
+ color: #ffffff;
+ font-weight: bold;
  background-color: #4c8be2;
 }
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
- color: #e4e8ee;
+ color: #ffffff;
+ font-weight: bold;
  background: rgba(191,97,106,.4) !important;
 }
 .cm-header-1 {
