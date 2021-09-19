@@ -1,5 +1,5 @@
 {
-    "shell_cmd": "clang++ -std=c++14 $file -o $file_base_name.bin && $file_path/$file_base_name.bin",
+    "shell_cmd": "clang++ -std=c++17 \"${file}\" -o ${file_base_name}.bin && \"${file_path}/${file_base_name}.bin\"",
     "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
     "selector": "source.c, source.c++",
 
@@ -7,7 +7,7 @@
     [
         {
             "name": "Run sample.in",
-            "shell_cmd": "clang++ -std=c++14 $file -o $file_base_name.bin && $file_path/$file_base_name.bin < sample.in"
+            "shell_cmd": "clang++ -std=c++17 \"${file}\" -o ${file_base_name}.bin && \"${file_path}/${file_base_name}.bin\" < sample.in"
         }
     ]
 }
