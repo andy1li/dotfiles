@@ -22,7 +22,7 @@ alias octave="octave --quiet"
 alias p="ipython --no-banner --matplotlib=tk"
 alias R="R --no-save --quiet"
 alias rl="readlink"
-alias s="subl"
+alias lc="lolcat"
 
 alias adb="~/Library/Nemu/adb"
 alias ss="proxychains4 -q"
@@ -31,7 +31,7 @@ alias sd="source deactivate"
 alias stat="stat -x"
 
 alias v="vim"
-alias z="subl ~/.zshrc"
+alias z="code ~/.zshrc"
 
 # Bindkeys
 bindkey "^X^_" redo
@@ -41,12 +41,12 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 # PATH
 export PATH=~/anaconda3/bin:$PATH
-export PATH=$PATH:~/Scripts
-export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
+# export PATH=$PATH:~/Scripts
+# export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
 
 # GO
-export PATH=$PATH:~/go/bin
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+# export PATH=$PATH:~/go/bin
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # Prevent LESS from clearing the screen
 export LESS=" -R -X "
@@ -71,11 +71,6 @@ export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bott
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
 DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# pyspark settings
-# export PYSPARK_PYTHON=~/anaconda3/bin/python
-# export PYSPARK_DRIVER_PYTHON=jupyter
-# export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
 
 # Shadowsocks
 #export all_proxy=127.0.0.1:1086
@@ -132,7 +127,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-alias nvm_init="source /usr/local/opt/nvm/nvm.sh"
+source /usr/local/opt/nvm/nvm.sh
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -140,8 +135,8 @@ plugins=(zsh-syntax-highlighting zsh-autosuggestions history-substring-search au
 ZSH_THEME="refined-mod"
 
 source $ZSH/oh-my-zsh.sh
-# alias d='dirs -v | head -10'
-alias d="docker"
+alias ls="exa"
+alias l="ls -lah"
 
 # thefuck
 eval $(thefuck --alias) 
@@ -162,3 +157,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+export PNPM_HOME="/Users/andy/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"

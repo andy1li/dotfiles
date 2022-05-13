@@ -22,7 +22,7 @@
 [credential]
 	helper = osxkeychain
 [http]
-	proxy = http://127.0.0.1:1087
+	proxy = http://127.0.0.1:7890
 [diff]
 	tool = diffmerge
 [difftool "diffmerge"]
@@ -32,3 +32,11 @@
 [mergetool "diffmerge"]
 	trustExitCode = true
 	cmd = /usr/local/bin/diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[user]
+	name = "Andy Li"
+	email = 1450947+andy1li@users.noreply.github.com
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
