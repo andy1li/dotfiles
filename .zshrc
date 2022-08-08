@@ -139,7 +139,7 @@ alias ls="exa"
 alias l="ls -lah"
 
 # thefuck
-eval $(thefuck --alias) 
+# eval $(thefuck --alias) 
 alias fuck="fuck --yeah"
 
 # >>> conda initialize >>>
@@ -159,3 +159,4 @@ unset __conda_setup
 
 export PNPM_HOME="/Users/andy/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

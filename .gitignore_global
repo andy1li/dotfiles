@@ -3,12 +3,12 @@
 **/package-lock.json
 **/__pycache__
 **/__snapshots__
-**/*.env
+**/.env*
 **/.DS_Store
 **/.ipynb_checkpoints
 **/.mypy_cache
+**/dist
 .output
 .routify
 .vscode
-dist
 package-lock.json
