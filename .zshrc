@@ -11,10 +11,12 @@ alias gdb="sudo gdb -q"
 alias gon="git config --global http.proxy http://127.0.0.1:1087"
 alias goff="git config --global --unset http.proxy"
 
+alias bash="/usr/local/bin/bash"
 alias hex="hexdump -C"
 alias jnb="jupyter notebook"
 alias locate="mdfind -name"
 alias mongod="mongod --config /usr/local/etc/mongod.conf"
+alias apl="/usr/local/bin/dyalogscript"
 
 alias o="open"
 alias o.="open ."
@@ -38,34 +40,31 @@ bindkey "^X^_" redo
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
-
-# PATH
-export PATH=~/anaconda3/bin:$PATH
-# export PATH=$PATH:~/Scripts
-# export PATH=$PATH:~/Library/Haskell/bin:~/.local/bin
-
-# GO
-# export PATH=$PATH:~/go/bin
-# export PATH=$PATH:/usr/local/opt/go/libexec/bin
-
 # Prevent LESS from clearing the screen
 export LESS=" -R -X "
-
 # Use colors for less and man
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
-
 # Prevent echoing ctrl+c
 stty -echoctl
-
 # NO_BEEP
 setopt NO_BEEP
-
 # Language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# PATH
+export PATH=~/anaconda3/bin:$PATH
+export PATH=~/.ghcup/bin:$PATH
+
+export PNPM_HOME="/Users/andy/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
+export JAVA_HOME=/usr/local/Cellar/openjdk/19.0.2/libexec/openjdk.jdk/Contents/Home
+
 # Homebrew
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -127,7 +126,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-source /usr/local/opt/nvm/nvm.sh
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
@@ -137,10 +137,6 @@ ZSH_THEME="refined-mod"
 source $ZSH/oh-my-zsh.sh
 alias ls="exa"
 alias l="ls -lah"
-
-# thefuck
-# eval $(thefuck --alias) 
-alias fuck="fuck --yeah"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -157,6 +153,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PNPM_HOME="/Users/andy/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+

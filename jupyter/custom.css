@@ -1,3 +1,8 @@
+.language-APL {
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono',
+      Menlo, Consolas, monospace;
+  }
+
 div#notebook {
  font-family: sans-serif;
  font-size: 13pt;
