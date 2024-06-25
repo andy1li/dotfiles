@@ -1,0 +1,12 @@
+{
+  "themes": {
+    "mac": {
+      "commandName": "bold, yellow",
+      "mainDescription": "",
+      "exampleDescription": "green",
+      "exampleCode": "bold, red",
+      "exampleToken": "bold, blue"
+    }
+  },
+  "theme": "mac"
+}

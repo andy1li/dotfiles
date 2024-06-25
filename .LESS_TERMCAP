@@ -1,0 +1,16 @@
+export LESS_TERMCAP_mb=$(printf '\e[01;31m') # enter blinking mode
+export LESS_TERMCAP_md=$(tput bold; tput setaf 1) # enter double-bright mode
+export LESS_TERMCAP_me=$(printf '\e[0m') # turn off all appearance modes (mb, md, so, us)
+export LESS_TERMCAP_se=$(printf '\e[0m') # leave standout mode
+export LESS_TERMCAP_so=$(printf '\033[5m\e[01;33m') # enter standout mode
+export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
+export LESS_TERMCAP_us=$(tput smul; tput bold; tput setaf 4) # enter underline mode
+
+# 0: Black
+# 1: Red
+# 2: Green
+# 3: Yellow
+# 4: Blue
+# 5: Magenta
+# 6: Cyan
+# 7: White
