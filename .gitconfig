@@ -17,8 +17,6 @@
 	d = diff
 	lg = log --oneline --decorate --all --graph
 	s = status -s
-[credential]
-	helper = osxkeychain
 [user]
 	name = "Andy Li"
 	email = 1450947+andy1li@users.noreply.github.com
