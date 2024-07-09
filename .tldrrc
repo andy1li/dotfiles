@@ -1,0 +1,13 @@
+{
+  "themes": {
+    "tlrc": {
+      "commandName": "magenta",
+      "mainDescription": "magenta",
+      "exampleDescription": "green",
+      "exampleCode": "cyan",
+      "exampleToken": "red"
+    }
+  },
+  "theme": "tlrc"
+}
+
