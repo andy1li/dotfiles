@@ -3,7 +3,6 @@ alias du="du -sh"
 alias g="git"
 alias gr="grep"
 
-alias h="htop"
 alias hex="hexdump -C"
 
 alias lc="lolcat"
