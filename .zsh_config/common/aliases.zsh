@@ -5,8 +5,6 @@ alias gr="grep"
 
 alias hex="hexdump -C"
 
-alias lc="lolcat"
-
 alias rl="readlink"
 
 alias t="tmux"
