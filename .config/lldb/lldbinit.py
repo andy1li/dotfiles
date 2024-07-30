@@ -97,7 +97,7 @@ CONFIG_APPEARANCE = 'dark'
 # display the instruction bytes in disassembler output
 CONFIG_DISPLAY_DISASSEMBLY_BYTES = 1
 # the maximum number of lines to display in disassembler output
-CONFIG_DISASSEMBLY_LINE_COUNT = 16
+CONFIG_DISASSEMBLY_LINE_COUNT = 20
 # x/i and disas output customization - doesn't affect context disassembler output
 CONFIG_USE_CUSTOM_DISASSEMBLY_FORMAT = 1
 # enable all the register command shortcuts
