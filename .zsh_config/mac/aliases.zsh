@@ -6,6 +6,8 @@ alias ip="curl ipinfo.io/json"
 
 alias jnb="jupyter notebook"
 
+alias ldmac="ld -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path`"
+
 alias o="open"
 alias o.="open ."
 
