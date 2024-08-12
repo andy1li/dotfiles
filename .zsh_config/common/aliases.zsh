@@ -1,5 +1,3 @@
-alias du="du -sh"
-
 alias g="git"
 alias gr="grep"
 
