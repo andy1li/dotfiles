@@ -1,3 +1,5 @@
+alias c.="code ."
+
 alias dc="~/Documents"
 alias dl="~/Downloads"
 alias dt="~/Desktop"
