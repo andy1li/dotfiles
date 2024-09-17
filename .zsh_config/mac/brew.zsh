@@ -3,6 +3,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/anaconda3/bin":$PATH
 export PATH="/opt/homebrew/opt/dart@2.19/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
 
 export VCPKG_ROOT="$HOME/vcpkg"
 
