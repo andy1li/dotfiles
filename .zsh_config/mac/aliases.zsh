@@ -1,4 +1,4 @@
-alias c.=cursor
+alias c=cursor
 alias c.="cursor ."
 
 alias dc="~/Documents"
