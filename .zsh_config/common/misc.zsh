@@ -1,4 +1,4 @@
-export BAT_THEME="gruvbox-dark"
+export BAT_THEME="zenburn"
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
