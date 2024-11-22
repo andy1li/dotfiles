@@ -1,6 +1,8 @@
 alias g="git"
 alias gr="grep"
 
+alias gb="git branch"
+alias gc="git clone"
 alias gcan="git commit --amend --no-edit"
 alias gco="git checkout"
 alias gcob="git checkout -b"
