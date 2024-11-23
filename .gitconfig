@@ -9,14 +9,6 @@
 	rebase = true
 [rerere]
 	enabled = true
-[alias]
-	b = branch
-	c = clone
-	co = checkout
-	cm = !git add -A && git commit -am
-	d = diff
-	lg = log --oneline --decorate --all --graph
-	s = status -s
 [user]
 	name = "Andy Li"
 	email = 1450947+andy1li@users.noreply.github.com
