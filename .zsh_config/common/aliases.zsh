@@ -1,5 +1,7 @@
 alias g="git"
 
+alias ga='git add'
+alias gaa='git add --all'
 alias gb="git branch"
 alias gbd="git branch -d"
 alias gbD="git branch -D"
@@ -13,7 +15,7 @@ alias gcom="git checkout main"
 alias gd="git diff"
 alias gds="git diff --staged"
 alias gl="git pull"
-alias glg="git log --oneline --decorate --all --graph"
+alias glg="git --no-pager log --oneline --decorate --graph -n40"
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias grbi='git rebase -i'
