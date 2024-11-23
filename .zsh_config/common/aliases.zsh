@@ -1,12 +1,13 @@
 alias g="git"
-
 alias ga='git add'
 alias gaa='git add -A --verbose'
+alias gacp="gaa && gcm && git push"
 alias gb="git branch"
 alias gbd="git branch -d"
 alias gbD="git branch -D"
 alias gc="git clone"
 alias gcan="git commit --amend --no-edit"
+alias gcat="git cat-file -p"
 alias gcm='git commit -m "$(git diff --staged | sgpt stdin "Write a concise commit message for the changes.")"'
 alias gcmp="gcm && git push"
 alias gco="git checkout"
