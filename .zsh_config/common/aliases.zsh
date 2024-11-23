@@ -1,5 +1,4 @@
 alias g="git"
-alias gr="grep"
 
 alias gb="git branch"
 alias gbd="git branch -d"
