@@ -1,7 +1,7 @@
 alias g="git"
 
 alias ga='git add'
-alias gaa='git add --all'
+alias gaa='git add -A --verbose'
 alias gb="git branch"
 alias gbd="git branch -d"
 alias gbD="git branch -D"
@@ -21,6 +21,7 @@ alias gpf="git push --force-with-lease"
 alias grbi='git rebase -i'
 alias grh='git reset --hard'
 alias grs='git reset --soft'
+alias grst='git restore --staged'
 alias gs="git status -s"
 
 alias rl="readlink"
