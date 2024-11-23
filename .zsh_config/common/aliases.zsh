@@ -12,11 +12,14 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gcom="git checkout main"
 alias gd="git diff"
+alias gds="git diff --staged"
 alias gl="git pull"
 alias glg="git log --oneline --decorate --all --graph"
 alias gp="git push"
 alias gpf="git push --force-with-lease"
 alias grbi='git rebase -i'
+alias grh='git reset --hard'
+alias grs='git reset --soft'
 alias gs="git status -s"
 
 alias rl="readlink"
