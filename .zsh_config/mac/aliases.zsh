@@ -2,7 +2,7 @@ alias c=cursor
 alias c.="cursor ."
 
 alias ct="codecrafters test"
-alias ctp="codecrafters --previous"
+alias ctp="codecrafters test --previous"
 
 alias dc="~/Documents"
 alias dl="~/Downloads"
