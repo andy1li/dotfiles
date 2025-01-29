@@ -1,2 +1,2 @@
 command script import ~/Dotfiles/.config/lldb/lldbinit.py
-command alias main breakpoint set -n main
+command alias bmain breakpoint set -n main
