@@ -16,7 +16,7 @@ alias o="open"
 alias o.="open ."
 
 alias p="ipython --no-banner"
-alias proxy="export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890"
+alias proxy="export http_proxy=socks5://127.0.0.1:7890 && export https_proxy=socks5://127.0.0.1:7890"
 
 alias ss="proxychains4 -q"
 alias stat="stat -x"
