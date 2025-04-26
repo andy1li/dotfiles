@@ -32,6 +32,7 @@ alias gs="g status -s"
 alias rl="readlink"
 
 alias t="tmux"
+alias timeout=gtimeout
 
 alias v="vim"
 
