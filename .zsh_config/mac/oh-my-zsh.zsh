@@ -1,3 +1,5 @@
+setopt NO_BEEP
+
 export ZSH="$HOME/.oh-my-zsh"
 
 # git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
