@@ -2,8 +2,30 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AIFeatureFunctionCalling</key>
+	<true/>
+	<key>AIFeatureHostedCodeInterpeter</key>
+	<true/>
+	<key>AIFeatureHostedFileSearch</key>
+	<true/>
+	<key>AIFeatureHostedWebSearch</key>
+	<true/>
+	<key>AIFeatureStreamingResponses</key>
+	<true/>
+	<key>AITermAPI</key>
+	<integer>2</integer>
+	<key>AIVectorStore</key>
+	<integer>1</integer>
 	<key>AdjustWindowForFontSizeChange</key>
 	<false/>
+	<key>AiMaxTokens</key>
+	<integer>1000000</integer>
+	<key>AiModel</key>
+	<string>gpt-4.1</string>
+	<key>AiResponseMaxTokens</key>
+	<integer>32768</integer>
+	<key>AitermURL</key>
+	<string>https://api.openai.com/v1/responses</string>
 	<key>AllowClipboardAccess</key>
 	<true/>
 	<key>AlternateMouseScroll</key>
@@ -2102,19 +2124,18 @@
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x54-0x120000</key>
+		<key>0x54-0x120000-0x11</key>
 		<dict>
 			<key>Action</key>
 			<integer>44</integer>
+			<key>Apply Mode</key>
+			<integer>0</integer>
+			<key>Escaping</key>
+			<integer>2</integer>
 			<key>Text</key>
 			<string></string>
-		</dict>
-		<key>0x5a-0x120000</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Text</key>
-			<string>0x18 0x1f</string>
+			<key>Version</key>
+			<integer>2</integer>
 		</dict>
 		<key>0x6c-0x100000-0x25</key>
 		<dict>
@@ -2128,13 +2149,6 @@
 			<string>clear\n</string>
 			<key>Version</key>
 			<integer>2</integer>
-		</dict>
-		<key>0x7a-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>11</integer>
-			<key>Text</key>
-			<string>0x1f</string>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
@@ -2220,7 +2234,7 @@
 	<key>LeftOption</key>
 	<integer>2</integer>
 	<key>LeftTabBarWidth</key>
-	<real>172</real>
+	<real>150</real>
 	<key>MiddleClickClosesTab</key>
 	<false/>
 	<key>MinimalTabStyleOutlineStrength</key>
@@ -3537,7 +3551,7 @@
 	<key>TabViewType</key>
 	<integer>2</integer>
 	<key>TabsHaveCloseButton</key>
-	<false/>
+	<true/>
 	<key>TmuxUsesDedicatedProfile</key>
 	<false/>
 	<key>ToolbeltTools</key>
